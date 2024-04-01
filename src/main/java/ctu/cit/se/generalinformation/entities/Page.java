@@ -22,11 +22,11 @@ public class Page {
     private UUID id;
     @Column(name = "page_name")
     private String name;
+    @Column(name = "page_header_title")
+    private String headerTitle;
+    @Column(name = "page_header_body")
+    private String headerBody;
     @ManyToOne
     @JoinColumn(name = "page_project_id")
     private Project project;
-    @OneToMany(mappedBy = "headerPage", cascade = CascadeType.ALL)
-    private List<Header> headers = new ArrayList<>();
-    @OneToMany(mappedBy = "footerPage", cascade = CascadeType.ALL)
-    private List<Footer> footers = new ArrayList<>();
 }

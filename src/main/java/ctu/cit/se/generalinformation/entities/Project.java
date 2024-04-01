@@ -24,6 +24,14 @@ public class Project {
     private String name;
     @Column(name = "project_description")
     private String description;
+    @Column(name = "project_footer_left")
+    private String footerLeft;
+    @Column(name = "project_footer_left_link")
+    private String footerLeftLink;
+    @Column(name = "project_footer_right")
+    private String footerRight;
+    @Column(name = "project_footer_right_link")
+    private String footerRightLink;
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
     private List<Page> pages = new ArrayList<>();
 }

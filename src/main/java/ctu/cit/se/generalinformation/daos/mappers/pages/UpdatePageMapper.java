@@ -5,7 +5,6 @@ import ctu.cit.se.generalinformation.dtos.pages.UpdatePageReqDTO;
 import ctu.cit.se.generalinformation.entities.Page;
 import ctu.cit.se.generalinformation.exceptions.messages.CustomExceptionMessage;
 import ctu.cit.se.generalinformation.repositories.IPageRepository;
-import ctu.cit.se.generalinformation.repositories.IProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +12,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Component
-public class UpdatePagteMapper implements IMapper<UpdatePageReqDTO, Page> {
+public class UpdatePageMapper implements IMapper<UpdatePageReqDTO, Page> {
     @Autowired
     private IPageRepository pageRepository;
     @Override

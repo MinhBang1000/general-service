@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 public class CreatePageReqDTO {
     @JsonProperty("pageName")
     private String name;
+    @JsonProperty("pageCode")
+    private String code;
     @JsonProperty("pageProjectId")
     private String projectId;
     @JsonProperty("pageHeaderTitle")

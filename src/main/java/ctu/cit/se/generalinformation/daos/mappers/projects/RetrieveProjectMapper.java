@@ -19,7 +19,7 @@ public class RetrieveProjectMapper implements IMapper<Project, RetrieveProjectRe
         return RetrieveProjectResDTO.builder()
                 .id(source.getId().toString())
                 .name(source.getName())
-                .description(source.getDescription())
+                .code(source.getCode())
                 .footerLeft(source.getFooterLeft())
                 .footerLeftLink(source.getFooterLeftLink())
                 .footerRight(source.getFooterRight())

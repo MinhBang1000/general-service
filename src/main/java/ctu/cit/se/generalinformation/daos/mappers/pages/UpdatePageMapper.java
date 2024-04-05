@@ -22,6 +22,7 @@ public class UpdatePageMapper implements IMapper<UpdatePageReqDTO, Page> {
                 .id(page.getId())
                 .name(Objects.isNull(source.getName()) ? page.getName() : source.getName())
                 .project(page.getProject())
+                .code(Objects.isNull(source.getCode()) ? page.getCode() : source.getCode())
                 .headerTitle(Objects.isNull(source.getHeaderTitle()) ? page.getHeaderTitle() : source.getHeaderTitle())
                 .headerBody(Objects.isNull(source.getHeaderBody()) ? page.getHeaderBody() : source.getHeaderBody())
                 .build();

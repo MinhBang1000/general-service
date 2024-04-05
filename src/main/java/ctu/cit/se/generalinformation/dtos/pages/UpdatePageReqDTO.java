@@ -15,6 +15,8 @@ public class UpdatePageReqDTO {
     private String id;
     @JsonProperty("pageName")
     private String name;
+    @JsonProperty("pageCode")
+    private String code;
     @JsonProperty("pageHeaderTitle")
     private String headerTitle;
     @JsonProperty("pageHeaderBody")

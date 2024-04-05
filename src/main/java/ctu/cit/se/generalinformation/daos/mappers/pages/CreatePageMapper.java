@@ -21,6 +21,7 @@ public class CreatePageMapper implements IMapper<CreatePageReqDTO, Page> {
         );
         return Page.builder()
                 .name(source.getName())
+                .code(source.getCode())
                 .headerTitle(source.getHeaderTitle())
                 .headerBody(source.getHeaderBody())
                 .project(project)

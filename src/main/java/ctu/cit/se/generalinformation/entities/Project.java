@@ -22,8 +22,8 @@ public class Project {
     private UUID id;
     @Column(name = "project_name")
     private String name;
-    @Column(name = "project_description")
-    private String description;
+    @Column(name = "project_code")
+    private String code;
     @Column(name = "project_footer_left")
     private String footerLeft;
     @Column(name = "project_footer_left_link")

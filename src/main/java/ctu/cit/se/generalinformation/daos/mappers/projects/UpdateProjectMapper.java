@@ -24,7 +24,7 @@ public class UpdateProjectMapper implements IMapper<UpdateProjectReqDTO, Project
         return Project.builder()
                 .id(project.getId())
                 .name(Objects.isNull(source.getName()) ? project.getName() : source.getName())
-                .description(Objects.isNull(source.getDescription()) ? project.getDescription() : source.getDescription())
+                .code(Objects.isNull(source.getCode()) ? project.getCode() : source.getCode())
                 .footerLeft(Objects.isNull(source.getFooterLeft()) ? project.getFooterLeft() : source.getFooterLeft())
                 .footerLeftLink(Objects.isNull(source.getFooterLeftLink()) ? project.getFooterLeftLink() : source.getFooterLeftLink())
                 .footerRight(Objects.isNull(source.getFooterRight()) ? project.getFooterRight() : source.getFooterRight())

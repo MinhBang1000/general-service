@@ -22,6 +22,8 @@ public class Page {
     private UUID id;
     @Column(name = "page_name")
     private String name;
+    @Column(name = "page_code")
+    private String code;
     @Column(name = "page_header_title")
     private String headerTitle;
     @Column(name = "page_header_body")

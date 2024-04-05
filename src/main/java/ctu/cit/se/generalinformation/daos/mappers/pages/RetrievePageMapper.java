@@ -12,6 +12,7 @@ public class RetrievePageMapper implements IMapper<Page, RetrievePageResDTO> {
         return RetrievePageResDTO.builder()
                 .id(source.getId().toString())
                 .name(source.getName())
+                .code(source.getCode())
                 .headerTitle(source.getHeaderTitle())
                 .headerBody(source.getHeaderBody())
                 .projectId(source.getProject().getId().toString())

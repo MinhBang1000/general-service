@@ -17,8 +17,8 @@ public class UpdateProjectReqDTO {
     private String id;
     @JsonProperty("projectName")
     private String name;
-    @JsonProperty("projectDescription")
-    private String description;
+    @JsonProperty("projectCode")
+    private String code;
     @JsonProperty("projectFooterLeft")
     private String footerLeft;
     @JsonProperty("projectFooterLeftLink")

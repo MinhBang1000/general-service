@@ -18,7 +18,7 @@ public class CreateProjectMapper implements IMapper<CreateProjectReqDTO, Project
     public Project convert(CreateProjectReqDTO source) {
         return Project.builder()
                 .name(source.getName())
-                .description(source.getDescription())
+                .code(source.getCode())
                 .footerLeft(source.getFooterLeft())
                 .footerLeftLink(source.getFooterLeftLink())
                 .footerRight(source.getFooterRight())

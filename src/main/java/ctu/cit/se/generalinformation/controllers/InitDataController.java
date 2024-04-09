@@ -29,7 +29,7 @@ public class InitDataController {
     @Autowired
     private IBaseInitData<CreateProjectReqDTO> projectInitData;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<Void> createInitData() {
         projectDAO.initData(projectInitData.getInitData());
         pageDAO.initData(pageInitData.getInitData());

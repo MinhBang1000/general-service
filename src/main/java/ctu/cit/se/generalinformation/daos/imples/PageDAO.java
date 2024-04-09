@@ -6,6 +6,7 @@ import ctu.cit.se.generalinformation.dtos.others.CommandResDTO;
 import ctu.cit.se.generalinformation.dtos.pages.CreatePageReqDTO;
 import ctu.cit.se.generalinformation.dtos.pages.RetrievePageResDTO;
 import ctu.cit.se.generalinformation.dtos.pages.UpdatePageReqDTO;
+import ctu.cit.se.generalinformation.dtos.projects.CreateProjectReqDTO;
 import ctu.cit.se.generalinformation.entities.Page;
 import ctu.cit.se.generalinformation.exceptions.messages.CustomExceptionMessage;
 import ctu.cit.se.generalinformation.repositories.IPageRepository;
@@ -66,5 +67,16 @@ public class PageDAO implements IPageDAO {
     public void delete(UUID pageId) {
         var page = pageRepository.findById(pageId).orElseThrow(()->new IllegalArgumentException(CustomExceptionMessage.PAGE_NOT_FOUND));
         pageRepository.delete(page);
+    }
+
+    @Override
+    public void initData(List<CreatePageReqDTO> createPageReqDTOS) {
+        createPageReqDTOS.stream().forEach(createPageReqDTO -> {
+            var page = createMapper.convert(createPageReqDTO);
+            var pages = pageRepository.findByCode(page.getCode());
+            if (pages.size() == 0) {
+                pageRepository.save(page);
+            }
+        });
     }
 }

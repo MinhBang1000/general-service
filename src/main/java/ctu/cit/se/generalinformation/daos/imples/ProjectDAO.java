@@ -67,4 +67,15 @@ public class ProjectDAO implements IProjectDAO {
         var project = projectRepository.findById(projectId).orElseThrow(()->new IllegalArgumentException(CustomExceptionMessage.PROJECT_NOT_FOUND));
         projectRepository.delete(project);
     }
+
+    @Override
+    public void initData(List<CreateProjectReqDTO> createProjectReqDTOS) {
+        createProjectReqDTOS.stream().forEach(createProjectReqDTO -> {
+            var project = createMapper.convert(createProjectReqDTO);
+            var projects = projectRepository.findByCode(project.getCode());
+            if (projects.size() == 0) {
+                projectRepository.save(project);
+            }
+        });
+    }
 }

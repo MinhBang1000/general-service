@@ -24,9 +24,9 @@ public class Page {
     private String name;
     @Column(name = "page_code")
     private String code;
-    @Column(name = "page_header_title")
+    @Column(name = "page_header_title", columnDefinition = "TEXT", length = 250)
     private String headerTitle;
-    @Column(name = "page_header_body")
+    @Column(name = "page_header_body", columnDefinition = "TEXT", length = 500)
     private String headerBody;
     @ManyToOne
     @JoinColumn(name = "page_project_id")

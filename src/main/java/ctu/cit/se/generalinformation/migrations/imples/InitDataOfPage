@@ -1,0 +1,81 @@
+PAGEs:
+
+Trang chủ
+
+{
+"pageName": "Trang chủ",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_homepage",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "HỆ THỐNG GIÁM SÁT ĐỘ MẶN VÀ LỊCH ĐÓNG MỞ CỐNG / ĐẬP",
+"pageHeaderBody": "Hệ thống hỗ trợ quản lý các thông tin về lịch đóng / mở của hệ thống cống / đập và cảm biến trên địa bàn tỉnh Hậu Giang"
+}
+
+Quản lý tài khoản
+
+{
+"pageName": "Quản lý tài khoản",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_user_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ TÀI KHOẢN NGƯỜI DÙNG",
+"pageHeaderBody": "Hỗ trợ quản lý thông tin tài khoản người dùng, cung cấp tài khoản"
+}
+
+Quản lý vai trò
+
+{
+"pageName": "Quản lý vai trò",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_role_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ VAI TRÒ CỦA NGƯỜI DÙNG",
+"pageHeaderBody": "Hỗ trợ quản lý thông tin về vai trò và quyền hạn của người dung bên trong hệ thống"
+}
+
+Quản lý đập
+
+{
+"pageName": "Quản lý đập",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_dam_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ CỐNG / ĐẬP",
+"pageHeaderBody": "Hỗ trợ quản lý các thông tin chung về hệ thống cống / đập trực thuộc tỉnh Hậu Giang"
+}
+
+Quản lý sông, kênh, rạch
+
+{
+"pageName": "Quản lý sông, kênh, rạch",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_river_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ SÔNG / KÊNH / RẠCH",
+"pageHeaderBody": "Hỗ trợ quản lý thông tin về hệ thống sông / kênh / rạch trên địa bàn tỉnh Hậu Giang"
+}
+
+Quản lý trạm
+
+{
+"pageName": "Quản lý trạm",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_station_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ TRẠM CẢM BIẾN",
+"pageHeaderBody": "Hỗ trợ quản lý thông tin các trạm cảm biến tại các vị trí trực thuộc tỉnh Hậu Giang"
+}
+
+Quản lý loại đập
+
+{
+"pageName": "Quản lý loại đập",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_dam_type_management",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "QUẢN LÝ LOẠI CỐNG / ĐẬP”,
+"pageHeaderBody": "Hỗ trợ quản lý thông tin về các loại hình cống / đập đang được sử dụng tại tỉnh Hậu Giang"
+}
+
+Thông tin chi tiết đập
+
+{
+"pageName": "Quản lý loại đập",
+"pageCode": "U2FsdGVkX1/CWjVqRRnlyitZ9vISoCgx/rEeZbKMiLQ=_dms_page_dam_detail",
+"pageProjectId": "4e4e232f-183a-4177-8e6b-83b82125c4fe",
+"pageHeaderTitle": "THÔNG TIN CỐNG / ĐẬP CHI TIẾT”,
+"pageHeaderBody": "Hỗ trợ theo dõi và thao tác các thông tin cống / đập chi tiết"
+}

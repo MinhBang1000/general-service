@@ -38,3 +38,6 @@ build/
 #pom.xml
 .env
 !/src/main/resources/
+docker-compose.yml
+Dockerfile
+src/main/resources/application.properties

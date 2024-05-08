@@ -15,4 +15,5 @@ public interface IProjectDAO {
     List<RetrieveProjectResDTO> list();
     RetrieveProjectResDTO retrieve(UUID projectId);
     void delete(UUID projectId);
+    void initData(List<CreateProjectReqDTO> createProjectReqDTOS);
 }

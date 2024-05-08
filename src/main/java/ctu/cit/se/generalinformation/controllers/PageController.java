@@ -52,6 +52,7 @@ public class PageController {
     }
     @DeleteMapping("/{pageId}")
     public ResponseEntity<Void> delete(@PathVariable String pageId) {
+        pageApplication.delete(UUID.fromString(pageId));
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

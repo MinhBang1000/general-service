@@ -48,6 +48,7 @@ public class ProjectController {
     }
     @DeleteMapping("/{projectId}")
     public ResponseEntity<Void> delete(@PathVariable String projectId) {
+        projectApplication.delete(UUID.fromString(projectId));
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

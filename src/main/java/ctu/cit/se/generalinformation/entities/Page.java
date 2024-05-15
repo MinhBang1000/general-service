@@ -20,13 +20,13 @@ public class Page {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    @Column(name = "page_name")
+    @Column(name = "page_name", columnDefinition = "varchar(250)")
     private String name;
     @Column(name = "page_code")
     private String code;
-    @Column(name = "page_header_title", columnDefinition = "TEXT", length = 250)
+    @Column(name = "page_header_title", columnDefinition = "varchar(250)")
     private String headerTitle;
-    @Column(name = "page_header_body", columnDefinition = "TEXT", length = 500)
+    @Column(name = "page_header_body", columnDefinition = "varchar(250)")
     private String headerBody;
     @ManyToOne
     @JoinColumn(name = "page_project_id")
